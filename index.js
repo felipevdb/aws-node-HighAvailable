@@ -15,18 +15,18 @@ app.get('/', function (req, res) {
 app.get('/getMachineId', function (req, res){
     var meta  = new AWS.MetadataService();
 
-    var machineId =  meta.request("/latest/meta-data/instance-id", function(err, data){
-    console.log(data);
+    var machineId = meta.request("/latest/meta-data/instance-id", function(err, data){
+        console.log(data);
     });
 
-    res.send({message: machineId});
+    res.send(machineId);
 }),
 
 
 
-app.listen(3000, "0.0.0.0", function () {
+app.listen(3000, function () {
   console.log('Example app listening on port 8000!')
-})
+});
 
 
 
