@@ -7,6 +7,7 @@ const express = require('express'),
 var app = express()
 
 app.get('/', function (req, res) {
+
   res.sendFile(path.join(__dirname, 'Client', 'index.html'))
 })
 
@@ -23,7 +24,7 @@ app.get('/getMachineId', function (req, res){
 
 
 
-app.listen(8000, function () {
+app.listen(3000, "0.0.0.0", function () {
   console.log('Example app listening on port 8000!')
 })
 
