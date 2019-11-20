@@ -1,0 +1,22 @@
+{
+  "name": "aws-node-highavailable",
+  "version": "1.0.0",
+  "description": "Node application to test High Available on AWS environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipevdb/aws-node-HighAvailable.git"
+  },
+  "author": "Felipe Viana de Brito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipevdb/aws-node-HighAvailable/issues"
+  },
+  "homepage": "https://github.com/felipevdb/aws-node-HighAvailable#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
