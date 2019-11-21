@@ -8,19 +8,30 @@ var app = express()
 
 app.get('/', function (req, res) {
 
-  res.sendFile(path.join(__dirname, 'Client', 'index.html'))
+  res.sendFile(path.join(__dirname, 'client', 'index.html'))
 })
 
 
 app.get('/getMachineId', function (req, res){
     var meta  = new AWS.MetadataService();
 
-    var machineId = meta.request("/latest/meta-data/instance-id", function(err, data){
-        console.log(data);
+    meta.request("/latest/meta-data/instance-id", function(err, machineId){
+        res.send(machineId);
     });
 
-    res.send(machineId);
+    
 }),
+
+app.get('/stress', function (req, res){
+    
+  var i = 0;
+  while(i != 1000000)
+  {
+    i++
+  }
+
+}),
+
 
 
 
