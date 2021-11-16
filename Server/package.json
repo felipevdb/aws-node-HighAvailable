@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/felipevdb/aws-node-HighAvailable#readme",
   "dependencies": {
-    "aws-sdk": "^2.575.0",
+    "aws-sdk": "^2.814.0",
     "express": "^4.17.1"
   }
 }
