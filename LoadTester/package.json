@@ -9,7 +9,7 @@
   "author": "Felipe Viana de Brito",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "loadtest": "^3.0.9"
   }
 }
